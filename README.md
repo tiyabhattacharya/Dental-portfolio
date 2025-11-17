@@ -27,6 +27,7 @@ Accessible & SEO-friendly structure
 Ready-to-customize clinic content
 
 📁 Folder Structure
+```
 /
 │── index.html
 │── css/
@@ -37,7 +38,7 @@ Ready-to-customize clinic content
       ├── images/
       ├── icons/
       └── videos/
-
+```
 🚀 How to Use
 
 Clone the repository:
