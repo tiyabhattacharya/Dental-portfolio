@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Smile Dental Studio | Advanced Cosmetic & Restorative Dentistry</title>
+    <meta name="description" content="Experience world-class dental care with advanced cosmetic and restorative treatments. Transform your smile with Precision Smile Dental Studio.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="tooth-icon">
+                <i data-feather="smile"></i>
+            </div>
+            <p>Loading Excellence...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <i data-feather="smile"></i>
+                    <span>Precision Smile</span>
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#doctors" class="nav-link">Doctors</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1600&q=80');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80');">
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-label">Advanced Cosmetic & Restorative Dentistry</span>
+                    <h1 class="hero-title">Your Perfect Smile<br>Starts Here</h1>
+                    <p class="hero-description">Experience world-class dental care with cutting-edge technology and personalized treatment plans designed for your unique needs.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-lg">Schedule Consultation</a>
+                        <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+                    </div>
+                    
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <i data-feather="award"></i>
+                            <span>Award Winning</span>
+                        </div>
+                        <div class="badge">
+                            <i data-feather="shield"></i>
+                            <span>Fully Certified</span>
+                        </div>
+                        <div class="badge">
+                            <i data-feather="users"></i>
+                            <span>10,000+ Patients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-controls">
+            <button class="hero-prev" id="heroPrev"><i data-feather="chevron-left"></i></button>
+            <button class="hero-next" id="heroNext"><i data-feather="chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-image-main drift-image" data-speed="2">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80" alt="Modern Dental Clinic Interior" loading="lazy">
+                    </div>
+                    <div class="about-image-secondary drift-image" data-speed="3">
+                        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&q=80" alt="Dental Equipment" loading="lazy">
+                    </div>
+                    <div class="about-image-tertiary drift-image" data-speed="1.5">
+                        <img src="https://images.unsplash.com/photo-1598531228433-d9f0fe1f0e7e?w=800&q=80" alt="Dental Tools" loading="lazy">
+                    </div>
+                    <div class="about-image-quaternary drift-image" data-speed="2.5">
+                        <img src="https://images.unsplash.com/photo-1629909615361-4dfa572e3ded?w=800&q=80" alt="Clinic Interior" loading="lazy">
+                    </div>
+                    
+                    <div class="about-stats-card">
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <span class="section-label">About Our Clinic</span>
+                    <h2 class="section-title">Excellence in Dental Care Since 2008</h2>
+                    <p class="section-description">At Precision Smile Dental Studio, we combine advanced technology with compassionate care to deliver exceptional dental experiences. Our state-of-the-art facility and expert team are dedicated to transforming smiles and improving lives.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Advanced Technology</h4>
+                                <p>Digital imaging, 3D scanning, and laser dentistry for precise treatments</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Expert Team</h4>
+                                <p>Board-certified specialists with decades of combined experience</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Patient-Centered Approach</h4>
+                                <p>Personalized treatment plans tailored to your unique needs</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Comprehensive Dental Solutions</h2>
+                <p class="section-description">From routine checkups to advanced cosmetic procedures, we offer a full range of dental services to keep your smile healthy and beautiful.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="smile"></i>
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Transform your smile with veneers, teeth whitening, and smile makeovers designed to enhance your natural beauty.</p>
+                    <a href="#contact" class="service-link">Learn More <i data-feather="arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="crosshair"></i>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent tooth replacement solutions using cutting-edge implant technology for a natural look and feel.</p>
+                    <a href="#contact" class="service-link">Learn More <i data-feather="arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Professional whitening treatments that deliver dramatic results in just one visit, up to 8 shades brighter.</p>
+                    <a href="#contact" class="service-link">Learn More <i data-feather="arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <h3>Preventive Care</h3>
+                    <p>Regular checkups, cleanings, and preventive treatments to maintain optimal oral health year-round.</p>
+                    <a href="#contact" class="service-link">Learn More <i data-feather="arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="tool"></i>
+                    </div>
+                    <h3>Restorative Dentistry</h3>
+                    <p>Repair and restore damaged teeth with crowns, bridges, fillings, and advanced restoration techniques.</p>
+                    <a href="#contact" class="service-link">Learn More <i data-feather="arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="layers"></i>
+                    </div>
+                    <h3>Orthodontics</h3>
+                    <p>Straighten your teeth with traditional braces or modern clear aligners for a perfectly aligned smile.</p>
+                    <a href="#contact" class="service-link">Learn More <i data-feather="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Transformations</span>
+                <h2 class="section-title">Before & After Gallery</h2>
+                <p class="section-description">See the life-changing results we've achieved for our patients through expert dental care and advanced treatments.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="comparison-slider">
+                        <div class="comparison-before">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80" alt="Before Treatment" loading="lazy">
+                            <span class="comparison-label">Before</span>
+                        </div>
+                        <div class="comparison-after">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="After Treatment" loading="lazy">
+                            <span class="comparison-label">After</span>
+                        </div>
+                        <div class="comparison-handle">
+                            <i data-feather="move"></i>
+                        </div>
+                    </div>
+                    <h4>Complete Smile Makeover</h4>
+                    <p>Veneers + Whitening</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="comparison-slider">
+                        <div class="comparison-before">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80" alt="Before Treatment" loading="lazy">
+                            <span class="comparison-label">Before</span>
+                        </div>
+                        <div class="comparison-after">
+                            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&q=80" alt="After Treatment" loading="lazy">
+                            <span class="comparison-label">After</span>
+                        </div>
+                        <div class="comparison-handle">
+                            <i data-feather="move"></i>
+                        </div>
+                    </div>
+                    <h4>Dental Implants</h4>
+                    <p>Full Restoration</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="comparison-slider">
+                        <div class="comparison-before">
+                            <img src="https://images.unsplash.com/photo-1609840114035-3c981407e31f?w=800&q=80" alt="Before Treatment" loading="lazy">
+                            <span class="comparison-label">Before</span>
+                        </div>
+                        <div class="comparison-after">
+                            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80" alt="After Treatment" loading="lazy">
+                            <span class="comparison-label">After</span>
+                        </div>
+                        <div class="comparison-handle">
+                            <i data-feather="move"></i>
+                        </div>
+                    </div>
+                    <h4>Teeth Whitening</h4>
+                    <p>Professional Treatment</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="comparison-slider">
+                        <div class="comparison-before">
+                            <img src="https://images.unsplash.com/photo-1598531228433-d9f0fe1f0e7e?w=800&q=80" alt="Before Treatment" loading="lazy">
+                            <span class="comparison-label">Before</span>
+                        </div>
+                        <div class="comparison-after">
+                            <img src="https://images.unsplash.com/photo-1629909615361-4dfa572e3ded?w=800&q=80" alt="After Treatment" loading="lazy">
+                            <span class="comparison-label">After</span>
+                        </div>
+                        <div class="comparison-handle">
+                            <i data-feather="move"></i>
+                        </div>
+                    </div>
+                    <h4>Orthodontic Treatment</h4>
+                    <p>Clear Aligners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Meet Our Team</span>
+                <h2 class="section-title">Expert Dental Professionals</h2>
+                <p class="section-description">Our board-certified dentists bring decades of experience and a passion for creating beautiful, healthy smiles.</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80" alt="Dr. Sarah Mitchell" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Mitchell</h3>
+                        <span class="doctor-title">Lead Cosmetic Dentist</span>
+                        <p>15+ years specializing in smile makeovers and veneers. Board certified with advanced training in aesthetic dentistry.</p>
+                        <div class="doctor-credentials">
+                            <span class="credential">DDS, Harvard</span>
+                            <span class="credential">AACD Member</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80" alt="Dr. James Chen" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Chen</h3>
+                        <span class="doctor-title">Implant Specialist</span>
+                        <p>12+ years focusing on dental implants and oral surgery. Pioneer in minimally invasive implant techniques.</p>
+                        <div class="doctor-credentials">
+                            <span class="credential">DMD, UCLA</span>
+                            <span class="credential">AAID Certified</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80" alt="Dr. Emily Rodriguez" loading="lazy">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <span class="doctor-title">Orthodontist</span>
+                        <p>10+ years in orthodontics, specializing in clear aligners and accelerated treatment options for all ages.</p>
+                        <div class="doctor-credentials">
+                            <span class="credential">DDS, NYU</span>
+                            <span class="credential">AAO Member</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">The Precision Smile Difference</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item slide-left">
+                    <div class="benefit-icon">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>We invest in the latest dental technology including digital X-rays, 3D imaging, and laser dentistry for precise, comfortable treatments.</p>
+                </div>
+                
+                <div class="benefit-item slide-right">
+                    <div class="benefit-icon">
+                        <i data-feather="clock"></i>
+                    </div>
+                    <h3>Same-Day Appointments</h3>
+                    <p>Emergency and same-day appointments available. We understand dental issues can't wait, so we're here when you need us.</p>
+                </div>
+                
+                <div class="benefit-item slide-left">
+                    <div class="benefit-icon">
+                        <i data-feather="heart"></i>
+                    </div>
+                    <h3>Comfort-Focused Care</h3>
+                    <p>Sedation options, heated chairs, and noise-canceling headphones ensure a relaxing, anxiety-free experience.</p>
+                </div>
+                
+                <div class="benefit-item slide-right">
+                    <div class="benefit-icon">
+                        <i data-feather="dollar-sign"></i>
+                    </div>
+                    <h3>Flexible Financing</h3>
+                    <p>Multiple payment plans and insurance options to make quality dental care accessible for every budget.</p>
+                </div>
+                
+                <div class="benefit-item slide-left">
+                    <div class="benefit-icon">
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3>5-Star Patient Reviews</h3>
+                    <p>Consistently rated as the top dental clinic in the area with hundreds of 5-star reviews from satisfied patients.</p>
+                </div>
+                
+                <div class="benefit-item slide-right">
+                    <div class="benefit-icon">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3>Award-Winning Service</h3>
+                    <p>Recognized by the American Dental Association for excellence in patient care and clinical outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study -->
+    <section class="case-study">
+        <div class="container">
+            <div class="case-study-content">
+                <span class="section-label">Success Story</span>
+                <h2 class="section-title">How BrightSmile Dental Increased Bookings by 42%</h2>
+                
+                <div class="case-study-grid">
+                    <div class="case-study-text">
+                        <h3>The Challenge</h3>
+                        <p>BrightSmile Dental, a growing practice in downtown Seattle, was struggling to convert website visitors into booked appointments. Their outdated website lacked modern features and failed to showcase their expertise.</p>
+                        
+                        <h3>The Solution</h3>
+                        <p>We redesigned their digital presence with a focus on user experience, clear calls-to-action, and integrated online booking. The new site featured before/after galleries, patient testimonials, and seamless appointment scheduling.</p>
+                        
+                        <h3>The Results</h3>
+                        <div class="case-results">
+                            <div class="result">
+                                <h4>42%</h4>
+                                <p>Increase in Bookings</p>
+                            </div>
+                            <div class="result">
+                                <h4>3.2x</h4>
+                                <p>More Contact Form Submissions</p>
+                            </div>
+                            <div class="result">
+                                <h4>68%</h4>
+                                <p>Higher Engagement Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-image">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Case Study" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Patient Reviews</span>
+                <h2 class="section-title">What Our Patients Say</h2>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Dr. Mitchell completely transformed my smile! I was self-conscious about my teeth for years, and after getting veneers here, I can't stop smiling. The entire team made me feel comfortable throughout the process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jessica Thompson</h4>
+                            <span>Marketing Executive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"I had dental anxiety for most of my life, but the team at Precision Smile changed everything. They're incredibly patient and understanding. The sedation options made my implant procedure completely stress-free."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best dental experience I've ever had! The office is modern and spotless, the staff is friendly, and Dr. Chen is incredibly skilled. My dental implants look and feel completely natural. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Martinez</h4>
+                            <span>Real Estate Agent</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"I came in for a routine cleaning and ended up getting a full smile consultation. Dr. Rodriguez created an amazing treatment plan for my crooked teeth. Six months with clear aligners and my smile is perfect!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>David Park</h4>
+                            <span>Teacher</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional teeth whitening here was a game-changer! My teeth are 8 shades brighter and the results were instant. The staff explained everything clearly and made sure I was comfortable the entire time."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Amanda Foster</h4>
+                            <span>Photographer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-controls">
+                <button class="testimonials-prev" id="testimonialsPrev"><i data-feather="chevron-left"></i></button>
+                <button class="testimonials-next" id="testimonialsNext"><i data-feather="chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How often should I visit the dentist?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend visiting the dentist every 6 months for routine checkups and cleanings. However, some patients with specific dental conditions may need more frequent visits. During your consultation, we'll create a personalized schedule based on your oral health needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you accept dental insurance?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We accept most major dental insurance plans. Our team will verify your benefits and help you understand your coverage before any treatment. We also offer flexible payment plans for services not covered by insurance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are dental veneers and how long do they last?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Dental veneers are thin, custom-made shells that cover the front surface of teeth to improve appearance. Made from porcelain or composite resin, they can fix discoloration, chips, gaps, or misshapen teeth. With proper care, porcelain veneers typically last 10-15 years.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is teeth whitening safe?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, professional teeth whitening is completely safe when performed by licensed dental professionals. Our whitening treatments use FDA-approved materials and are customized to minimize sensitivity while delivering dramatic results - up to 8 shades brighter in just one visit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the dental implant process?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The dental implant process typically involves three stages: 1) Initial consultation and 3D imaging, 2) Surgical placement of the titanium implant (which integrates with your jawbone over 3-6 months), and 3) Placement of the custom crown. The entire process usually takes 3-6 months, resulting in a permanent, natural-looking tooth replacement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer emergency dental services?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer same-day emergency appointments for urgent dental issues like severe pain, broken teeth, or knocked-out teeth. Call us immediately if you have a dental emergency - we'll do everything possible to see you the same day.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are clear aligners and how do they compare to braces?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Clear aligners are removable, transparent trays that gradually straighten teeth. Unlike traditional braces, they're virtually invisible, can be removed for eating and cleaning, and typically require fewer office visits. Treatment time is comparable to braces (12-18 months on average) and they're effective for most orthodontic issues.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What payment options do you offer?</span>
+                        <i data-feather="plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, cash, checks, and dental insurance. We also partner with CareCredit and offer in-house financing plans with 0% interest for qualified patients. Our goal is to make quality dental care accessible regardless of your budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section with Indian Address -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Schedule Your Consultation</h2>
+                <p class="section-description">Take the first step toward your perfect smile. Book a consultation with our expert team today.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i data-feather="map-pin"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>2847 Medical Plaza Drive<br>Suite 200<br>San Francisco, CA 94115</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i data-feather="phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+14155551234">(415) 555-1234</a><br>Mon-Fri: 8am - 6pm<br>Sat: 9am - 3pm</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:hello@precisionsmile.com">hello@precisionsmile.com</a><br>We respond within 24 hours</p>
+                    </div>
+                    
+                    <div class="contact-quick-actions">
+                        <a href="https://wa.me/14155551234" class="quick-action whatsapp" target="_blank">
+                            <i data-feather="message-circle"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://calendly.com/precisionsmile" class="quick-action calendly" target="_blank">
+                            <i data-feather="calendar"></i>
+                            <span>Book Online</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-step active" data-step="1">
+                            <h3>Tell us about yourself</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary btn-block" onclick="nextStep()">Continue</button>
+                        </div>
+                        
+                        <div class="form-step" data-step="2">
+                            <h3>How can we help?</h3>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="cosmetic">Cosmetic Dentistry</option>
+                                    <option value="implants">Dental Implants</option>
+                                    <option value="whitening">Teeth Whitening</option>
+                                    <option value="preventive">Preventive Care</option>
+                                    <option value="restorative">Restorative Dentistry</option>
+                                    <option value="orthodontics">Orthodontics</option>
+                                    <option value="emergency">Emergency Care</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferred-date">Preferred Date</label>
+                                <input type="date" id="preferred-date" name="preferred-date">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Additional Notes</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us more about your needs..."></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline" onclick="prevStep()">Back</button>
+                                <button type="submit" class="btn btn-primary">Schedule Consultation</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <div class="success-icon">
+                            <i data-feather="check-circle"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>Your consultation request has been received. Our team will contact you within 24 hours to confirm your appointment.</p>
+                        <button class="btn btn-primary" onclick="resetForm()">Schedule Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i data-feather="smile"></i>
+                        <span>Precision Smile</span>
+                    </div>
+                    <p class="footer-description">Advanced Cosmetic & Restorative Dentistry dedicated to transforming smiles and improving lives since 2008.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#testimonials">Patient Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Cosmetic Dentistry</a></li>
+                        <li><a href="#services">Dental Implants</a></li>
+                        <li><a href="#services">Teeth Whitening</a></li>
+                        <li><a href="#services">Preventive Care</a></li>
+                        <li><a href="#services">Orthodontics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i data-feather="map-pin"></i>
+                            <span>2847 Medical Plaza Drive<br>Suite 200, San Francisco, CA</span>
+                        </li>
+                        <li>
+                            <i data-feather="phone"></i>
+                            <span>(415) 555-1234</span>
+                        </li>
+                        <li>
+                            <i data-feather="mail"></i>
+                            <span>hello@precisionsmile.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Precision Smile Dental Studio. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p class="footer-credits">Website Template by <a href="https://vortcode.com" target="_blank">VortCode Agency</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
